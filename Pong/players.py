@@ -14,10 +14,12 @@ class Player(Turtle):
         self.goto(self.start_pos)
 
     def move_up(self):
-        self.goto(self.xcor(), self.ycor() + 20)
+        if self.ycor() <= 250:
+            self.goto(self.xcor(), self.ycor() + 20)
 
     def move_down(self):
-        self.goto(self.xcor(), self.ycor() - 20)
+        if self.ycor() >= -230:
+            self.goto(self.xcor(), self.ycor() - 20)
 
 
 class Player1(Player):
