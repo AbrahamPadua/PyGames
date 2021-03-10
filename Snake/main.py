@@ -53,6 +53,7 @@ def start():
 
     scoreboard.game_over()
     screen.onkeypress(restart, "r")
+    screen.onkeypress(scoreboard.reset_hs, "e")
 
 
 start()
